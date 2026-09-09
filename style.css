@@ -1,0 +1,451 @@
+:root {
+    --navy: #102a43;
+    --ocean: #1677b8;
+    --sky: #56ccf2;
+    --coral: #f27a62;
+    --mist: #f4f8fb;
+    --ink: #17324d;
+    --muted: #6d8295;
+    --line: #dce8ef;
+}
+
+body {
+    background-color: var(--mist);
+    color: var(--ink);
+    font-family: Arial, sans-serif;
+}
+
+a {
+    text-decoration: none;
+}
+
+.btn {
+    border-radius: 8px;
+    font-weight: 500;
+}
+
+.btn-primary {
+    background-color: var(--ocean);
+    border-color: var(--ocean);
+    box-shadow: 0 3px 8px rgba(22, 119, 184, 0.14);
+}
+
+.btn-primary:hover,
+.btn-primary:focus {
+    background-color: var(--navy);
+    border-color: var(--navy);
+}
+
+.btn-success {
+    background-color: var(--coral);
+    border-color: var(--coral);
+}
+
+.btn-success:hover,
+.btn-success:focus {
+    background-color: #d9634e;
+    border-color: #d9634e;
+}
+
+.form-control,
+.form-select {
+    border-radius: 8px;
+    border: 1px solid var(--line);
+}
+
+.form-control:focus,
+.form-select:focus {
+    border-color: var(--sky);
+    box-shadow: 0 0 0 3px rgba(86, 204, 242, 0.18);
+}
+
+/* Navigation */
+.navbar {
+    min-height: 72px;
+    background: var(--navy) !important;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.08);
+}
+
+.navbar .container {
+    max-width: none;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 18px;
+    padding-left: 18px;
+    padding-right: 18px;
+}
+
+.portal-nav {
+    box-shadow: 0 8px 24px rgba(16, 42, 67, 0.14) !important;
+}
+
+.travel-brand {
+    display: flex;
+    align-items: center;
+    gap: 9px;
+    order: 1;
+    margin-right: auto;
+    margin-left: 0;
+    color: white !important;
+    font-size: 21px;
+    font-weight: 700;
+    letter-spacing: 0.2px;
+    transition: opacity 0.2s ease;
+}
+
+.travel-brand:hover {
+    opacity: 0.88;
+}
+
+.travel-logo {
+    width: 40px;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: linear-gradient(135deg, var(--ocean), var(--sky));
+    color: white;
+    border-radius: 12px;
+    font-size: 20px;
+    box-shadow: 0 6px 14px rgba(22, 119, 184, 0.3);
+}
+
+.brand-highlight {
+    color: var(--sky);
+}
+
+.nav-account {
+    display: flex;
+    align-items: center;
+    order: 2;
+    flex-shrink: 0;
+    gap: 12px;
+    color: #d9e7f5;
+    font-size: 14px;
+    white-space: nowrap;
+}
+
+.nav-account strong {
+    color: white;
+}
+
+.nav-account-label {
+    padding-right: 12px;
+    border-right: 1px solid rgba(255, 255, 255, 0.18);
+}
+
+.nav-dashboard-link {
+    display: inline-flex;
+    align-items: center;
+    order: 2;
+    gap: 7px;
+    color: #d9e7f5 !important;
+    border-color: rgba(255, 255, 255, 0.3) !important;
+    white-space: nowrap;
+}
+
+.nav-dashboard-link:hover {
+    background: rgba(255, 255, 255, 0.12);
+    border-color: rgba(255, 255, 255, 0.55) !important;
+}
+
+.nav-logout {
+    border-color: #ff8a8a !important;
+    color: #ffd3d3 !important;
+}
+
+.nav-logout:hover {
+    background: #dc3545;
+    color: white !important;
+}
+
+/* Login */
+.login-page {
+    background: linear-gradient(135deg, #e5f5fa, var(--mist));
+}
+
+.login-card {
+    border-radius: 16px;
+    background: white;
+}
+
+.brand-logo {
+    width: 68px;
+    height: 68px;
+    margin: auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: var(--ocean);
+    color: white;
+    border-radius: 15px;
+    font-size: 23px;
+    font-weight: bold;
+    box-shadow: 0 8px 20px rgba(22, 119, 184, 0.2);
+}
+
+.login-card h3,
+.dashboard-heading h2,
+.service-card h4,
+.train-card h5 {
+    color: var(--ink);
+}
+
+.login-card label,
+#trainSearchForm label,
+#passengerForm .form-label {
+    font-size: 14px;
+    font-weight: 600;
+    color: #4b6173;
+}
+
+/* Dashboard */
+.dashboard-heading h2 {
+    font-size: 27px;
+}
+
+.dashboard-heading p,
+.service-card p {
+    color: var(--muted);
+}
+
+.dashboard-page {
+    padding-top: 32px !important;
+    padding-bottom: 48px !important;
+}
+
+.balance-card {
+    background: linear-gradient(135deg, var(--navy), var(--ocean));
+    color: white;
+    border-radius: 15px;
+}
+
+.balance-card .card-body {
+    padding: 25px;
+}
+
+.balance-card h2 {
+    margin-bottom: 4px;
+    letter-spacing: 0.3px;
+}
+
+.service-card {
+    border-radius: 15px;
+    background: white;
+    border: 1px solid var(--line) !important;
+    transition: 0.25s ease;
+}
+
+.service-card .card-body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.service-card:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 10px 25px rgba(16, 42, 67, 0.1) !important;
+}
+
+.service-icon {
+    width: 62px;
+    height: 62px;
+    margin: auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: #e4f5fa;
+    color: var(--ocean);
+    border-radius: 14px;
+    font-size: 32px;
+}
+
+.service-card h4 {
+    font-size: 20px;
+}
+
+.service-description {
+    min-height: 42px;
+    margin-bottom: 20px;
+}
+
+.service-card .btn {
+    min-width: 132px;
+    margin-top: auto;
+}
+
+.card {
+    border-radius: 15px;
+}
+
+.card.shadow-sm,
+.quick-actions-card,
+#passengerSection .card {
+    border: 1px solid var(--line);
+}
+
+.quick-actions-card .card-body {
+    padding: 24px;
+}
+
+.quick-actions-card .btn {
+    min-height: 42px;
+}
+
+/* Search and result cards */
+#trainSearchForm .btn-primary {
+    padding: 10px 20px;
+}
+
+.train-card {
+    background: white;
+    border: 1px solid var(--line) !important;
+    border-left: 4px solid var(--ocean) !important;
+    border-radius: 12px !important;
+    transition: 0.2s ease;
+}
+
+.train-card:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 8px 20px rgba(16, 42, 67, 0.08) !important;
+}
+
+.train-card .class-btn {
+    min-width: 52px;
+}
+
+.train-availability {
+    border-left: 1px solid var(--line);
+    padding-left: 18px;
+}
+
+.train-availability strong {
+    color: var(--ink);
+    font-size: 18px;
+}
+
+.train-availability small {
+    font-size: 12px;
+}
+
+#selectedTrainInfo {
+    background: #e4f5fa;
+    border: none;
+    border-left: 4px solid var(--ocean);
+    color: var(--navy);
+    border-radius: 8px;
+}
+
+.passenger-count-field {
+    max-width: 280px;
+}
+
+/* Modal and ticket */
+.modal-content {
+    border: none;
+    border-radius: 15px;
+}
+
+#otpInput {
+    font-size: 20px;
+    letter-spacing: 5px;
+}
+
+.ticket-card {
+    border-radius: 16px !important;
+    border: 1px solid var(--line) !important;
+}
+
+.ticket-card hr {
+    border-color: var(--line);
+}
+
+.ticket-card .badge {
+    padding: 8px 14px;
+    border-radius: 20px;
+}
+
+.history-card {
+    border-left: 4px solid var(--ocean) !important;
+}
+
+.history-card hr {
+    border-color: var(--line);
+}
+
+@media (max-width: 575.98px) {
+    .history-heading {
+        align-items: stretch !important;
+        flex-direction: column;
+        gap: 16px;
+    }
+
+    .history-heading .btn {
+        align-self: flex-start;
+    }
+}
+
+@media (max-width: 767.98px) {
+    .train-availability {
+        border-left: none;
+        border-top: 1px solid var(--line);
+        margin-top: 14px;
+        padding: 14px 12px 0;
+    }
+
+    .travel-brand {
+        font-size: 19px;
+    }
+
+    .travel-logo {
+        width: 37px;
+        height: 37px;
+        font-size: 18px;
+    }
+
+    .balance-card .card-body {
+        padding: 20px;
+    }
+
+    #trainFilter,
+    #flightFilter,
+    #busFilter {
+        max-width: 100% !important;
+        width: 100%;
+    }
+
+    #trainResultsSection > .d-flex,
+    #flightResultsSection > .d-flex,
+    #busResultsSection > .d-flex {
+        flex-direction: column;
+        align-items: stretch !important;
+        gap: 12px;
+    }
+}
+
+@media (max-width: 575.98px) {
+    .navbar .container {
+        gap: 12px;
+        padding-left: 12px;
+        padding-right: 12px;
+    }
+
+    .travel-brand {
+        font-size: 18px;
+    }
+
+    .travel-logo {
+        width: 36px;
+        height: 36px;
+        font-size: 18px;
+    }
+
+    .nav-account-label {
+        display: none;
+    }
+
+    .nav-account {
+        gap: 8px;
+    }
+}
